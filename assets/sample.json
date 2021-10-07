@@ -1,0 +1,148 @@
+{
+    "errors": null,
+    "trxHistoryDetails": [
+        {
+            "trxDatetime": "12/03/2020 23:01:02",
+            "cardNbr": "2UcKoqrj3gQbMnvO78wd/w==r",
+            "retailerName": "CONVENIENCE",
+            "retailerLocation": "00000000012 TEST LN PITTSB",
+            "benefitType": "S",
+            "trxType": "FOOD STAMP PURCHASE",
+            "amount": 26,
+            "debitOrCredit": "D",
+            "retailerCategoryName": null
+        },
+        {
+            "trxDatetime": "12/06/2020 22:56:45",
+            "cardNbr": "2UcKoqrj3gQbMnvO78wd/w==r",
+            "retailerName": "CONVENIENCE",
+            "retailerLocation": "00000000012 TEST LN PITTSB",
+            "benefitType": "C",
+            "trxType": "FOOD STAMP PURCHASE",
+            "amount": 200,
+            "debitOrCredit": "D",
+            "retailerCategoryName": null
+        },
+        {
+            "trxDatetime": "12/02/2020 22:58:56",
+            "cardNbr": "2UcKoqrj3gQbMnvO78wd/w==r",
+            "retailerName": "CONVENIENCE",
+            "retailerLocation": "00000000012 TEST LN PITTSB",
+            "benefitType": "S",
+            "trxType": "FOOD STAMP RETURN",
+            "amount": 14,
+            "debitOrCredit": "C",
+            "retailerCategoryName": null
+        },
+        {
+            "trxDatetime": "12/01/2020 22:59:37",
+            "cardNbr": "2UcKoqrj3gQbMnvO78wd/w==r",
+            "retailerName": "CONVENIENCE",
+            "retailerLocation": "00000000012 TEST LN PITTSB",
+            "benefitType": "C",
+            "trxType": "FOOD STAMP RETURN",
+            "amount": 50,
+            "debitOrCredit": "C",
+            "retailerCategoryName": null
+        },
+        {
+            "trxDatetime": "12/01/2020 22:57:06",
+            "cardNbr": "2UcKoqrj3gQbMnvO78wd/w==r",
+            "retailerName": "CONVENIENCE",
+            "retailerLocation": "00000000012 TEST LN PITTSB",
+            "benefitType": "C",
+            "trxType": "FOOD STAMP PURCHASE",
+            "amount": 199,
+            "debitOrCredit": "D",
+            "retailerCategoryName": null
+        },
+        {
+            "trxDatetime": "12/02/2020 22:57:33",
+            "cardNbr": "2UcKoqrj3gQbMnvO78wd/w==r",
+            "retailerName": "CONVENIENCE",
+            "retailerLocation": "00000000012 TEST LN PITTSB",
+            "benefitType": "S",
+            "trxType": "FOOD STAMP PURCHASE",
+            "amount": 39,
+            "debitOrCredit": "D",
+            "retailerCategoryName": null
+        },
+        {
+            "trxDatetime": "12/05/2020 22:58:39",
+            "cardNbr": "2UcKoqrj3gQbMnvO78wd/w==r",
+            "retailerName": "CONVENIENCE",
+            "retailerLocation": "00000000012 TEST LN PITTSB",
+            "benefitType": "C",
+            "trxType": "FOOD STAMP PURCHASE",
+            "amount": 79,
+            "debitOrCredit": "D",
+            "retailerCategoryName": null
+        },
+        {
+            "trxDatetime": "12/02/2020 18:08:52",
+            "cardNbr": "2UcKoqrj3gQbMnvO78wd/w==r",
+            "retailerName": "CONVENIENCE",
+            "retailerLocation": "00000000012 TEST LN PITTSB",
+            "benefitType": "S",
+            "trxType": "FOOD STAMP PURCHASE",
+            "amount": 1,
+            "debitOrCredit": "D",
+            "retailerCategoryName": null
+        },
+        {
+            "trxDatetime": "12/02/2020 22:56:14",
+            "cardNbr": "2UcKoqrj3gQbMnvO78wd/w==r",
+            "retailerName": "CONVENIENCE",
+            "retailerLocation": "00000000012 TEST LN PITTSB",
+            "benefitType": "S",
+            "trxType": "FOOD STAMP RETURN",
+            "amount": 25,
+            "debitOrCredit": "C",
+            "retailerCategoryName": null
+        },
+        {
+            "trxDatetime": "12/02/2020 22:54:04",
+            "cardNbr": "2UcKoqrj3gQbMnvO78wd/w==r",
+            "retailerName": "CONVENIENCE",
+            "retailerLocation": "00000000012 TEST LN PITTSB",
+            "benefitType": "S",
+            "trxType": "FOOD STAMP PURCHASE",
+            "amount": 20,
+            "debitOrCredit": "D",
+            "retailerCategoryName": null
+        },
+        {
+            "trxDatetime": "12/02/2020 22:54:04",
+            "cardNbr": "2UcKoqrj3gQbMnvO78wd/w==r",
+            "retailerName": "CONVENIENCE",
+            "retailerLocation": "00000000012 TEST LN PITTSB",
+            "benefitType": "C",
+            "trxType": "FOOD STAMP PURCHASE",
+            "amount": 20,
+            "debitOrCredit": "D",
+            "retailerCategoryName": null
+        },
+        {
+            "trxDatetime": "12/02/2020 22:54:04",
+            "cardNbr": "2UcKoqrj3gQbMnvO78wd/w==r",
+            "retailerName": "CONVENIENCE",
+            "retailerLocation": "00000000012 TEST LN PITTSB",
+            "benefitType": "C",
+            "trxType": "FOOD STAMP PURCHASE",
+            "amount": 20,
+            "debitOrCredit": "D",
+            "retailerCategoryName": null
+        },
+        {
+            "trxDatetime": "12/02/2020 22:54:04",
+            "cardNbr": "2UcKoqrj3gQbMnvO78wd/w==r",
+            "retailerName": "CONVENIENCE",
+            "retailerLocation": "00000000012 TEST LN PITTSB",
+            "benefitType": "S",
+            "trxType": "FOOD STAMP PURCHASE",
+            "amount": 20,
+            "debitOrCredit": "D",
+            "retailerCategoryName": null
+        }
+    ]
+}
