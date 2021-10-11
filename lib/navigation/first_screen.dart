@@ -24,8 +24,10 @@ class _FirstScreenState extends State<FirstScreen> {
             child: Text("push to next"),
             onPressed: () {
               print("press button");
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => SecondScreen()));
+              Navigator.pushNamed(context, "/second");
+              // Navigator.push(context,
+              //     MaterialPageRoute(builder: (context) => SecondScreen()));
+
             },
           ),
         ),

@@ -1,7 +1,9 @@
+import 'dart:js';
 
 import 'package:firstproject/demo_list.dart';
 import 'package:firstproject/list_view.dart';
 import 'package:firstproject/navigation/first_screen.dart';
+import 'package:firstproject/navigation/second_screen.dart';
 import 'package:firstproject/statefull_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -21,7 +23,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.orange,
       ),
-      home: FirstScreen()
+      initialRoute: "/",
+      routes: {
+        "/": (context) => FirstScreen(),
+        "/second": (context) => SecondScreen()
+      },
+      // home: FirstScreen()
     );
   }
 
