@@ -8,6 +8,8 @@ import 'package:firstproject/navigation/second_screen.dart';
 import 'package:firstproject/statefull_widget.dart';
 import 'package:flutter/material.dart';
 
+import 'list_view/load_json_data_to_list.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -24,12 +26,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.orange,
       ),
-      initialRoute: "/empdemo",
+      initialRoute: "/loadList",
       routes: {
         "/": (context) => FirstScreen(),
         "/second": (context) => SecondScreen(),
         "/emplist": (context) => EmpListView(),
-        "/empdemo": (context) => FilterListDemo()
+        "/empdemo": (context) => FilterListDemo(),
+        "/loadList": (context) => LoadJsonFileToList()
       },
       // home: FirstScreen()
     );
@@ -124,3 +127,15 @@ class MyApp extends StatelessWidget {
 //Childerns - > Row, Column,ListView
 
 //Task: container, list,map tasks and Row
+
+
+//load the data from local json file and bind to listview
+//step 1: create one json file
+//step 2 : add json file to assets folder
+// step 3: define json file in .yml file
+// step 4: load the json file from bundle 
+// step 5: create one model class based on json 
+// step 6: bind the model class into listview
+
+
+//1 - > 2 - > 3 -> 4 -> 1
