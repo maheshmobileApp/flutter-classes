@@ -1,4 +1,4 @@
-import 'dart:js';
+
 
 import 'package:firstproject/demo_list.dart';
 import 'package:firstproject/list_view.dart';
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.orange,
       ),
-      initialRoute: "/loadList",
+      initialRoute: "/",
       routes: {
         "/": (context) => FirstScreen(),
         "/second": (context) => SecondScreen(),
