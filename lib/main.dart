@@ -1,5 +1,6 @@
 
 
+import 'package:firstproject/api_call/get_api_call.dart';
 import 'package:firstproject/demo_list.dart';
 import 'package:firstproject/list_view.dart';
 import 'package:firstproject/list_view/emp_list.dart';
@@ -26,13 +27,14 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.orange,
       ),
-      initialRoute: "/",
+      initialRoute: "/getApiCall",
       routes: {
         "/": (context) => FirstScreen(),
         "/second": (context) => SecondScreen(),
         "/emplist": (context) => EmpListView(),
         "/empdemo": (context) => FilterListDemo(),
-        "/loadList": (context) => LoadJsonFileToList()
+        "/loadList": (context) => LoadJsonFileToList(),
+        "/getApiCall": (context) => GetApiCall()
       },
       // home: FirstScreen()
     );
