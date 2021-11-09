@@ -14,6 +14,7 @@ class GetApiCall extends StatefulWidget {
 class _GetApiCallState extends State<GetApiCall> {
   Map<String, dynamic>? responseObject;
   OrdersModel? ordersData;
+  Dio _dio = Dio();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -67,14 +68,29 @@ class _GetApiCallState extends State<GetApiCall> {
   Future<Map<String, dynamic>> getTheDataFromServerUseDio() async {
     //step2:using dio package to the data from server
     // we are passing base url and headers in option variable
+
+    _dio.interceptors.addAll([
+      InterceptorsWrapper(
+          onRequest: (options, handler) {
+            options.headers = {
+              "Content-Type": 'application/json',
+              'Token':
+                  "1635817835260147197626acus7fkb8wj9dhjj7lz41d36jq1zlt5tdk9fnm0kp01z2j5ibjkm3xuviwp5pn1thpalb7sj7brm2t2jy9k55sldclqmazj7i29ev5x71bhn7zi7i0cliw5w"
+            };
+            return handler.next(options);
+          },
+          onResponse: (response, handler) {},
+          onError: (error, handler) {
+            print("error $error");
+            print(error.response?.data);
+            if (error.response?.statusCode == 400) {}
+          })
+    ]);
+
     try {
-      var response = await Dio().get(
-          'https://atxtest.atx.my/api/v1/customer_parcels/orders/submit/me',
-          options: Options(headers: {
-            "Content-Type": 'application/json',
-            'Token':
-                "1635817835260147197626acus7fkb8wj9dhjj7lz41d36jq1zlt5tdk9fnm0kp01z2j5ibjkm3xuviwp5pn1thpalb7sj7brm2t2jy9k55sldclqmazj7i29ev5x71bhn7zi7i0cliw5w"
-          }));
+      var response = await _dio.get(
+        'https://atxtest.atx.my/api/v1/customer_parcels/orders/submit/me',
+      );
       print(response);
       //response.data contains three keys, message,cp_orders,pagination-
       final responseData = response.data;
@@ -127,3 +143,6 @@ class _GetApiCallState extends State<GetApiCall> {
     }
   }
 }
+
+
+//login -> after login save the token in shared -> set the token in all request using interceptors, if toke expire 

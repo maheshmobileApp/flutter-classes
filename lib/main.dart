@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      initialRoute: "/",
+      initialRoute: "/getApiCall",
       routes: {
         "/": (context) => FirstScreen(),
         "/second": (context) => SecondScreen(),
