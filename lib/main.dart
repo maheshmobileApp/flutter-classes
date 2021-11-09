@@ -25,9 +25,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner:false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.orange,
+        primarySwatch: Colors.green,
       ),
-      initialRoute: "/getApiCall",
+      initialRoute: "/",
       routes: {
         "/": (context) => FirstScreen(),
         "/second": (context) => SecondScreen(),

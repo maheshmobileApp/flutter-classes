@@ -1,4 +1,5 @@
 import 'package:firstproject/api_call/oders_model.dart';
+import 'package:firstproject/widget/alert_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:dio/dio.dart';
@@ -15,7 +16,11 @@ class _GetApiCallState extends State<GetApiCall> {
   OrdersModel? ordersData;
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: buildListView());
+    return Scaffold(
+      body: buildListView(),
+      floatingActionButton:
+          FloatingActionButton(onPressed: () {}, child: Icon(Icons.add)),
+    );
   }
 
   Widget buildListView() {
@@ -80,7 +85,19 @@ class _GetApiCallState extends State<GetApiCall> {
         //this.responseObject = responseData;
       });
       return responseData;
-    } catch (e) {
+    } on DioError catch (e) {
+      //e.response.statusCode
+
+      showAlertDialog(context, "Error",
+          "Please check the request status Code is ${e.response?.statusCode}",
+          () {
+        print("ok action");
+        Navigator.of(context).pop();
+      }, () {
+        print("cancel action");
+        Navigator.of(context).pop();
+      });
+     
       print("dio error  $e");
       return {"": ""};
     }

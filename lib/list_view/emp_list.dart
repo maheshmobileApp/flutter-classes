@@ -1,4 +1,5 @@
 import 'package:firstproject/list_view/emp_list_tile.dart';
+import 'package:firstproject/widget/alert_widget.dart';
 import 'package:flutter/material.dart';
 
 class EmpListView extends StatefulWidget {
@@ -40,7 +41,7 @@ class _EmpListViewState extends State<EmpListView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: designListViewWithSeparater(),
+      body: designListViewBuilder(),
     );
   }
 
@@ -62,7 +63,16 @@ class _EmpListViewState extends State<EmpListView> {
         itemCount: names.length,
         itemBuilder: (BuildContext contex, int index) {
           final value = names[index];
-          return EmpListTile(name: value);
+          return GestureDetector(
+            child: Expanded(child: EmpListTile(name: value)),
+            onTap: () {
+              showAlertDialog(context, "click", "click on index $index", () {
+                Navigator.of(context).pop();
+              }, () {
+                Navigator.of(context).pop();
+              });
+            },
+          );
         });
   }
 
