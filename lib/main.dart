@@ -4,12 +4,14 @@ import 'package:firstproject/api_call/get_api_call.dart';
 import 'package:firstproject/demo_list.dart';
 import 'package:firstproject/list_view.dart';
 import 'package:firstproject/list_view/emp_list.dart';
+import 'package:firstproject/login/login_screen.dart';
 import 'package:firstproject/navigation/first_screen.dart';
 import 'package:firstproject/navigation/second_screen.dart';
 import 'package:firstproject/statefull_widget.dart';
 import 'package:flutter/material.dart';
 
 import 'list_view/load_json_data_to_list.dart';
+import 'splash_screen/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,14 +29,17 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      initialRoute: "/getApiCall",
+      initialRoute: "/",
       routes: {
-        "/": (context) => FirstScreen(),
+        "/": (context) => SplashScreen(),
+        "/first": (context) => FirstScreen(),
         "/second": (context) => SecondScreen(),
         "/emplist": (context) => EmpListView(),
         "/empdemo": (context) => FilterListDemo(),
         "/loadList": (context) => LoadJsonFileToList(),
-        "/getApiCall": (context) => GetApiCall()
+        "/getApiCall": (context) => GetApiCall(),
+         "/loginScreen": (context) => LoginScreen(),
+        
       },
       // home: FirstScreen()
     );
